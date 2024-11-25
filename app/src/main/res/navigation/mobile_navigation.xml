@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rkacm.rk_acm_inmobiliaria.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_compra"
+        android:name="com.rkacm.rk_acm_inmobiliaria.ui.compra.CompraFragment"
+        android:label="@string/menu_compra"
+        tools:layout="@layout/fragment_compra" />
+
+    <fragment
+        android:id="@+id/nav_venta"
+        android:name="com.rkacm.rk_acm_inmobiliaria.ui.venta.VentaFragment"
+        android:label="@string/menu_venta"
+        tools:layout="@layout/fragment_venta" />
+
+    <fragment
+        android:id="@+id/nav_herencia"
+        android:name="com.rkacm.rk_acm_inmobiliaria.ui.herencia.HerenciaFragment"
+        android:label="@string/menu_herencia"
+        tools:layout="@layout/fragment_herencia" />
+</navigation>

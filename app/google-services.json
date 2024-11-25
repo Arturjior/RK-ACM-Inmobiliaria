@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631284948940",
+    "project_id": "rkacm-cc439",
+    "storage_bucket": "rkacm-cc439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631284948940:android:ad1b61ad74a38a8b5a0769",
+        "android_client_info": {
+          "package_name": "com.rkacm.rk_acm_inmobiliaria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkpXptbyCXG5E9BJLuSY2QodP6rUnlN9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

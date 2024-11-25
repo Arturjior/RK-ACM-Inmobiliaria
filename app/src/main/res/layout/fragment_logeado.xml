@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LogeadoFragment"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/ivLogotipo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ivLogotipo"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="BIENVENIDO"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTituloPeque"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="¡¡Disfrute la aplicación!!"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvTituloEmailUser"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Email Usuario:"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvTituloPeque"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvEmailUser"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Prueba"
+        android:layout_below="@+id/tvTituloPeque"
+        android:layout_toRightOf="@+id/tvTituloEmailUser"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvEmailUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Cerrar Sesión" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnVender"
+        android:background="@drawable/botones_cuadrados"
+        android:backgroundTint="@color/red_dark"
+        android:stateListAnimator="@animator/boton_presionado"
+        android:elevation="20dp"
+        android:text="Comprar"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnVender"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/botones_cuadrados"
+        android:backgroundTint="@color/red_dark"
+        android:stateListAnimator="@animator/boton_presionado"
+        android:elevation="20dp"
+        android:text="Vender"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnHerencia"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnComprar"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_cuadrados"
+        android:backgroundTint="@color/red_dark"
+        android:stateListAnimator="@animator/boton_presionado"
+        android:elevation="20dp"
+        android:text="Herencias"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnHipoteca"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnHerencia"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botones_cuadrados"
+        android:backgroundTint="@color/red_dark"
+        android:stateListAnimator="@animator/boton_presionado"
+        android:elevation="20dp"
+        android:text="Calcula Tu Hipoteca"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/acmastronauta" />
+</RelativeLayout>

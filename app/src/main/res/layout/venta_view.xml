@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgFondo"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/ventafondo"/>
+
+        <Button
+            android:id="@+id/tvprincipal3"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_200"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvprincipal4"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgFondo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:textSize="18dp" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tvprincipal4"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/space">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imagenhomestaging"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvhomestaging"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenescaneado"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvescaneado"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagencompradores"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvcompradores"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagencarteles"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvcarteles"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenweb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvweb"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagencolaboracion"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvcolaboracion"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imagenreportaje"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvreportaje"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenreforma"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvreforma"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenvaloracion"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvvaloracion"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenescaparates"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvescaparates"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenportales"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvportales"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imagenflyers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tvflyers"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/linear"/>
+
+        <!--<Button
+            android:id="@+id/linkweb"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/space1"
+            android:layout_centerInParent="true"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red_dark" />-->
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imgSlider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSlider"
+            android:layout_marginTop="2dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tvCaracteristicas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvDescripcion"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:text="Características y Calidades"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloReferencia"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvCaracteristicas"
+            android:text="Ref:" />
+
+        <TextView
+            android:id="@+id/tvReferencia"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tvTituloReferencia"
+            android:layout_below="@+id/tvCaracteristicas"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTituloPropiedad"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Tipo de Propiedad:"
+            android:layout_below="@+id/tvTituloReferencia" />
+
+        <TextView
+            android:id="@+id/tvTipoPropiedad"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvReferencia"
+            android:layout_toRightOf="@+id/tvTituloPropiedad"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloZonaCiudad"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Zona / Ciudad:"
+            android:layout_below="@+id/tvTituloPropiedad" />
+
+        <TextView
+            android:id="@+id/tvZonaCiudad"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvTipoPropiedad"
+            android:layout_toRightOf="@+id/tvTituloZonaCiudad"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloSuperUtil"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Superficie Útil:"
+            android:layout_below="@+id/tvTituloZonaCiudad" />
+
+        <TextView
+            android:id="@+id/tvSuperficieUtil"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvZonaCiudad"
+            android:layout_toRightOf="@+id/tvTituloSuperUtil"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloSuperConstruida"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Superficie Construida:"
+            android:layout_below="@+id/tvTituloSuperUtil" />
+
+        <TextView
+            android:id="@+id/tvSuperficieConstruida"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvSuperficieUtil"
+            android:layout_toRightOf="@+id/tvTituloSuperConstruida"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloConservacion"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Conservación:"
+            android:layout_below="@+id/tvTituloSuperConstruida" />
+
+        <TextView
+            android:id="@+id/tvConservacion"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvSuperficieConstruida"
+            android:layout_toRightOf="@+id/tvTituloConservacion"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloHabitaciones"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Habitaciones:"
+            android:layout_below="@+id/tvTituloConservacion" />
+
+        <TextView
+            android:id="@+id/tvHabitaciones"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvConservacion"
+            android:layout_toRightOf="@+id/tvTituloHabitaciones"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloBanyos"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Baños:"
+            android:layout_below="@+id/tvTituloHabitaciones" />
+
+        <TextView
+            android:id="@+id/tvBanyos"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvHabitaciones"
+            android:layout_toRightOf="@+id/tvTituloBanyos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloGaraje"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Garaje:"
+            android:layout_below="@+id/tvTituloBanyos" />
+
+        <TextView
+            android:id="@+id/tvGaraje"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvBanyos"
+            android:layout_toRightOf="@+id/tvTituloGaraje"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloAntiguedad"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Antigüedad:"
+            android:layout_below="@+id/tvTituloGaraje" />
+
+        <TextView
+            android:id="@+id/tvAntiguedad"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvGaraje"
+            android:layout_toRightOf="@+id/tvTituloAntiguedad"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloNumPlantas"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Nº de Plantas:"
+            android:layout_below="@+id/tvTituloAntiguedad" />
+
+        <TextView
+            android:id="@+id/tvNumPlantas"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvAntiguedad"
+            android:layout_toRightOf="@+id/tvTituloNumPlantas"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloPlanta"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Planta:"
+            android:layout_below="@+id/tvTituloNumPlantas" />
+
+        <TextView
+            android:id="@+id/tvPlanta"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvNumPlantas"
+            android:layout_toRightOf="@+id/tvTituloPlanta"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloConsumoEnergia"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Consumo de Energía:"
+            android:layout_below="@+id/tvTituloPlanta" />
+
+        <TextView
+            android:id="@+id/tvConsumoEnergia"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvPlanta"
+            android:layout_toRightOf="@+id/tvTituloConsumoEnergia"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTituloEmisionesC02"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Emisiones CO2:"
+            android:layout_below="@+id/tvTituloConsumoEnergia" />
+
+        <TextView
+            android:id="@+id/tvEmisionesCO2"
+            android:layout_width="280dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvConsumoEnergia"
+            android:layout_toRightOf="@+id/tvTituloEmisionesC02"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnHipoteca"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tvEmisionesCO2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Calcular Hipoteca"
+            android:backgroundTint="@color/teal_200" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_compra"
+            android:icon="@drawable/compra"
+            android:title="@string/menu_compra" />
+        <item
+            android:id="@+id/nav_venta"
+            android:icon="@drawable/venta"
+            android:title="@string/menu_venta" />
+        <item
+            android:id="@+id/nav_herencia"
+            android:icon="@drawable/herencia"
+            android:title="@string/menu_herencia" />
+        <item
+            android:id="@+id/nav_hipoteca"
+            android:icon="@drawable/hipoteca"
+            android:title="@string/menu_hipoteca" />
+        <item
+            android:id="@+id/nav_sobreNosotros"
+            android:icon="@drawable/equipo"
+            android:title="@string/menu_sobreNosotros" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/contacto"
+            android:title="@string/menu_contacto" />
+    </group>
+</menu>

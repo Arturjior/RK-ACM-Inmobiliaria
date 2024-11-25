@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvtexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvtitulo"/>
+
+    <ImageView
+        android:id="@+id/iconodireccion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_below="@+id/tvtexto"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/iconotelefono"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_below="@+id/iconodireccion"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/iconoemail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_below="@+id/iconotelefono"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/oficina"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/iconodireccion"
+        android:layout_below="@+id/tvtexto"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/telefono1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/iconotelefono"
+        android:layout_below="@+id/oficina"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/guion"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/telefono1"
+        android:layout_below="@+id/oficina"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/telefono2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/guion"
+        android:layout_below="@+id/oficina"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/iconoemail"
+        android:layout_below="@+id/telefono1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tituloform"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/nombreform"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tituloform"
+        android:layout_marginTop="20dp"
+        android:ems="7"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Nombre y Apellidos *" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/observacionesform"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/emailform"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="E-mail *"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/nombreform"/>
+
+    <EditText
+        android:id="@+id/tlfform"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailform"
+        android:layout_toRightOf="@+id/emailform"
+        android:layout_marginTop="-49dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginRight="10dp"
+        android:hint="Teléfono *" />
+
+    <EditText
+        android:id="@+id/observacionesform"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@+id/tlfform"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Mensaje *"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/observacionesform"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/boton_seleccionado"
+        android:text="ENVIAR"
+        android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

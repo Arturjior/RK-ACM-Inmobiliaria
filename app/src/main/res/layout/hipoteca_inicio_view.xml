@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:text="Precio de Compra:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/edPrecio"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/tvPrecio"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tvEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="€"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/edPrecio"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvImpuesto"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvPrecio"
+            android:layout_marginTop="10dp"
+            android:text="Gastos Compra Aprox.(10%)*:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/edImpuesto"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@+id/edPrecio"
+            android:layout_toRightOf="@+id/tvImpuesto"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="€"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvEuro"
+            android:layout_toRightOf="@+id/edImpuesto"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvImpInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_below="@+id/tvImpuesto"
+            android:text="*Gastos aproximados de Notaría, Registro, Agencia e Impuestos, calculados en el supuesto de un ITP del 7%. Consultar las posibles reducciones en función a la edad y demás supuestos existentes, y las compraventas sujetas a IVA y IAJD."
+            android:textSize="12dp"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/tvPrecImp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvImpInfo"
+            android:text="Precio + Gastos de Compra:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvPrecImp2"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvImpInfo"
+            android:layout_toRightOf="@+id/tvPrecImp"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="€"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvImpInfo"
+            android:layout_toRightOf="@+id/tvPrecImp2"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvAhorro"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvPrecImp"
+            android:text="Ahorro Aportado:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <SeekBar
+            android:id="@+id/sbAhorro"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAhorro"
+            android:min="0"
+            android:max="400000"/>
+
+        <EditText
+            android:id="@+id/edAhorro"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-22dp"
+            android:layout_below="@+id/tvAhorro"
+            android:layout_toRightOf="@+id/sbAhorro"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="€"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-22dp"
+            android:layout_below="@+id/tvAhorro"
+            android:layout_toRightOf="@+id/edAhorro"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvInteres"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sbAhorro"
+            android:layout_marginTop="20dp"
+            android:text="Tipo de Interés*:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvIndicarInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_below="@id/tvInteres"
+            android:text="*Indicar Tipo de Interés a Calcular."
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/edInteres"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@+id/sbAhorro"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tvInteres"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="%"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/sbAhorro"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/edInteres"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvAnyos"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvIndicarInteres"
+            android:layout_marginTop="10dp"
+            android:text="Años de Hipoteca:"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <SeekBar
+            android:id="@+id/sbAnyos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAnyos"
+            android:min="0"
+            android:max="40"/>
+
+        <EditText
+            android:id="@+id/edAnyos"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-22dp"
+            android:layout_below="@+id/tvAnyos"
+            android:layout_toRightOf="@+id/tvAnyos"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="años"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-22dp"
+            android:layout_below="@id/tvAnyos"
+            android:layout_toRightOf="@+id/edAnyos"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/tvAnyos"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/borde"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/btnCalcular"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:background="@drawable/borderojo">
+
+            <TextView
+                android:id="@+id/tvCuota"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:text="Cuota mensual*:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvCuota2"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/tvCuota"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="€/mes"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/tvCuota2"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_below="@+id/borde"
+            android:text="*Los resultados son orientativos, llámenos para obtener un presupuesto personalizado."
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

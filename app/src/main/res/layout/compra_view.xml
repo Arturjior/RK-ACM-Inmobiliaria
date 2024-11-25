@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner_tipovivienda"
+            android:layout_width="108dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/spinner_ordenacion"
+            android:layout_width="108dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/spinner_tipovivienda" />
+
+        <Spinner
+            android:id="@+id/spinner_localidad"
+            android:layout_width="108dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/spinner_ordenacion" />
+
+        <ImageButton
+            android:id="@+id/buscar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/spinner_localidad"
+            android:background="@drawable/buscar"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Botón para realizar el filtro" />
+
+        <Button
+            android:id="@+id/borra"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Borrar filtro"
+            android:backgroundTint="@color/boton_deshabilitado"
+            android:layout_below="@+id/spinner_tipovivienda"/>
+
+        <LinearLayout
+            android:id="@+id/datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/borra"/>
+
+    </RelativeLayout>
+
+</ScrollView>
